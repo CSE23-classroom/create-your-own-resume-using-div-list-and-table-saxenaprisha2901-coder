@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang= "en">
+<meta charset= "UTF-8">
+<meta name= "viewport" content width= device-width initial scale= "1.0">
+<title>Responsive Product Card Page</title>
+<head>
+<style>
+     {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+ body {
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+    }
+.card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+.card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      font-size: 18px;
+ margin-bottom: 10px;
+      color: #333;
+    }
+.card-content p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+</style>
+</head>
+<body>
+<div>
+<div align="text align:center;">
+<h2>SHOPPIFY.COM</h2>
+<div class="container">
+<div class="card">
+<img src="https://imgs.search.brave.com/TfjRb9NKAVK56bOVOzix-yGrmFPnMM9jhexnvArwr7w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ1/NzA2ODU3OC9waG90/by9jbG9zZS11cC1w/ZW4uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPXVZcGJBX3dy/Q0ZzQ2p0b1ZGYW1X/Wkp1LXJmX1Nva25q/R2pfR3ZxblZNTHM9"><alt="Product Image">
+<div class="card-content">
+        <h3>Ballpoint pen</h3>
+        <p>.7 mm tip, hard grip, effortless writing</p>
+        <div class="price">₹50</div>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+</div>
+    <div class="card">
+      <img src="https://imgs.search.brave.com/zhs7cYy4EcZ9fKKr_uDqJOidSaymdlEqqBbywPkulrk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTc3/NTI4NTQ2OC9waG90/by9ub3RlYm9vay1t/b2NrdXAtY2xvc2Vk/LWFuZC1vcGVuLWJs/YW5rLW5vdGVib29r/LXdpdGgtYmxhY2st/Y292ZXItc3BpcmFs/LW5vdGVwYWQtb24t/d2hpdGUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVEzMEZY/MVlrbmxjaUtIdlJx/bl9YQXlfQjBlMlNU/RHg4WGJZQUpWUDRO/YTA9" alt="Product Image">
+      <div class="card-content">
+        <h3>Notebook</h3>
+<p>50 pages, both side unruled, high quality paper</p>
+        <div class="price">₹100</div>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+<div class="card">
+      <img src="https://imgs.search.brave.com/V-w1B1VMjUKmhDxYMwusSFHOArKW_LGQoyGD2f2GzGE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1wc2QvcGVu/Y2lsLW9iamVjdC10/cmFuc3BhcmVudC1w/c2RfNzkzOS00NTM5/LmpwZz9zZW10PWFp/c19oeWJyaWQmdz03/NDAmcT04MA" alt="Product Image">
+      <div class="card-content">
+        <h3>Pencil</h3>
+<p>High quality HB pencils</p>
+        <div class="price">₹15</div>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+</div>
+</body>
+</html>
