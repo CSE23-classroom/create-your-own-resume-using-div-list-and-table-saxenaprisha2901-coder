@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        main {
+            display: grid;
+            grid-template-rows: 80px 300px 60px;
+            gap: 5px;
+        }
+
+        header, section, footer {
+            background-color: antiquewhite;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        section {
+            line-height: 300px;
+        }
+
+        footer {
+            line-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>Header</header>
+        <section>Content</section>
+        <footer>Footer</footer>
+    </main>
+</body>
+</html>
