@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nykaa Clone</title>
+
+<style>
+:root{
+    --pink:#e80071;
+    --light-pink:#ffb3d9;
+    --bg:#f7f7f7;
+    --dark:#222;
+}
+
+/* Global */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:var(--bg);
+}
+
+/* Offer Bar */
+.offer-bar{
+    background:linear-gradient(90deg,#ff9fcf,#ffb3d9);
+    text-align:center;
+    padding:10px;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* Navbar */
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:white;
+    display:flex;
+    align-items:center;
+    padding:12px 30px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+    color:var(--pink);
+    font-size:28px;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+.menu{
+    margin-left:40px;
+}
+
+.menu a{
+    text-decoration:none;
+    margin-right:18px;
+    color:var(--dark);
+    font-weight:500;
+    position:relative;
+}
+
+.menu a::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:2px;
+    background:var(--pink);
+    bottom:-5px;
+    left:0;
+    transition:0.3s;
+}
+
+.menu a:hover::after{
+    width:100%;
+}
+
+.search{
+    margin-left:auto;
+}
+
+.search input{
+    padding:8px 12px;
+    width:220px;
+    border-radius:20px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+/* Hero Banner */
+.hero{
+    background:linear-gradient(135deg,#0b5d50,#0e7c6b);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:42px;
+    letter-spacing:1px;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Section */
+.section{
+    padding:60px 30px;
+}
+
+.section h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+    color:#d23c3c;
+}
+
+/* Product Grid */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+/* Cards */
+.card{
+    background:white;
+    border-radius:18px;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 15px 30px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 40px rgba(0,0,0,0.15);
+}
+
+.card img{
+    width:100%;
+    height:160px;
+    border-radius:12px;
+    background:#ddd;
+}
+
+.card h3{
+    margin-top:15px;
+}
+
+.card p{
+    margin:8px 0;
+    color:#666;
+}
+
+.card button{
+    margin-top:12px;
+    padding:10px 20px;
+    border:none;
+    background:var(--pink);
+    color:white;
+    border-radius:25px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:#c70061;
+}
+
+/* Glow Banner */
+.glow{
+    background:linear-gradient(90deg,#fff1f7,#ffe3ef);
+    padding:50px;
+    text-align:center;
+}
+
+.glow h2{
+    font-size:36px;
+    color:var(--pink);
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+footer p{
+    font-size:14px;
+    opacity:0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="offer-bar">
+✨ BEAUTY BONANZA – FREE SHIPPING ON ALL ORDERS ✨
+</div>
+
+<div class="navbar">
+    <div class="logo">NYKAA</div>
+
+    <div class="menu">
+        <a href="#">Categories</a>
+        <a href="#">Brands</a>
+        <a href="#">Luxe</a>
+        <a href="#">Fashion</a>
+        <a href="#">Advice</a>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Search on Nykaa">
+    </div>
+</div>
+
+<section class="hero">
+    <h1>Hello, Holiday Glow ✨</h1>
+    <p>Sale is live • Discover beauty deals</p>
+</section>
+
+<section class="section">
+    <h2>Holiday Hotlist</h2>
+
+    <div class="products">
+        <div class="card">
+           <img src="https://imgs.search.brave.com/-fSLDn44mjKYBFJjhzyPnKIMN36w1phjBvJlyYDV2Xc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ydWtt/aW5pbTIuZmxpeGNh/cnQuY29tL2ltYWdl/LzMwMC8zMDAveGlm/MHEvY29tYm8ta2l0/L2Evay9hL2NlcmFt/aWRlLWdsb3ctcmlj/ZS1yYWRpYW5jZS1j/b21iby1mb3Ita29y/ZWFuLWdsYXNzLXNr/aW4tZmFjZS1vcmln/aW5hbC1pbWFoOWM5/N3J4ZDZoemVwLmpw/ZWc_cT05MA" alt="product image">
+        
+            <h3>Skincare Combo</h3>
+            <p>Up to 25% Off</p>
+            <button>Shop Now</button>
+            </div>
+
+        <div class="card">
+            <img src="https://imgs.search.brave.com/0XWWuoCivDuegOixdlGP0rH6LcEsmUFW7V27FdnJCe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9yZWFscGFyaXN1/c2EuY29tLy0vbWVk/aWEvcHJvamVjdC9s/b3JlYWwvYnJhbmQt/c2l0ZXMvb2FwL2Ft/ZXJpY2FzL3VzL2Jl/YXV0eS1tYWdhemlu/ZS9zbGlkZXNob3dz/L21ha2V1cC1wcm9k/dWN0LWVzc2VudGlh/bHMvbG9yZWFsLXBh/cmlzLWJtYWctc2xp/ZGVzaG93LTIwLW1h/a2V1cC1wcm9kdWN0/LWVzc2VudGlhbHMt/ZXZlcnktd29tYW4t/c2hvdWxkLW93bi1z/bGlkZTEwLmpwZz9j/eD0wLjQ5JmN5PTAu/NTQmY3c9MTUxMCZj/aD04MTUmaGFzaD1F/NTMxRDI3NkIzMDZD/QUVCOUE0QjZGNDYx/NUQ2QjZBRQ" alt="product image">
+            <h3>Makeup Essentials</h3>
+            <p>Up to 40% Off</p>
+            <button>Shop Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://imgs.search.brave.com/d1Y937iNC_khoSc45NcveTt5OwJARivWr-87PW8u97Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Z3JhYm9uLmluL2dv/Z3JhYm9uL2luZHVs/Z2Uvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDIvV2ludGVy/LUdsb3ctU2FsZS5q/cGc" alt="product image">
+            <h3>Winter Glow</h3>
+            <p>Flat 15% Off</p>
+            <button>Shop Now</button>
+        </div>
+    </div>
+</section>
+
+<section class="glow">
+    <h2>’Tis the Season to Save 🎄</h2>
+</section>
+
+<section class="section">
+    <h2>More Deals</h2>
+
+    <div class="products">
+        <div class="card"><img src="https://imgs.search.brave.com/tT8qDfH6vGS2xFkodv7cnFby4lADX3mB0qAnU4l9aDU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjE3K25xMkFSd0wu/anBn" alt="product image"><h3>Lipsticks</h3><button>Buy</button></div>
+        <div class="card"><img src="https://imgs.search.brave.com/p4o0tAP7eMfgb4sMQ6hf8B1Y8RL68IXtNhaR1u6xI1I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhlcGlua3ZlbHZl/dGJsb2cuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIzLzA3/L055a2FhLVNlcnVt/cy1SZXZpZXctODE5/eDEwMjQuanBn" alt="product image"><h3>Serums</h3><button>Buy</button></div>
+        <div class="card"><img src="https://imgs.search.brave.com/e5lN_8iT-9cgGd5DGrBQ0qjpFeagC52L7ndHfKXNnGM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hcXVh/bG9naWNhLmluL2Nk/bi9zaG9wL2ZpbGVz/LzFiX2M1MWFkMjg5/LTY3OTQtNDBhYi1h/ZjEzLTg3NjMyZjgy/NDk3Yy5qcGc_dj0x/NzE5NTU0NTk2Jndp/ZHRoPTEyMDA" alt="product image"><h3>Moisturizers</h3><button>Buy</button></div>
+    </div>
+
+    <!-- More Products Heading -->
+<h2 style="padding-left:20px;">More From Love Beauty & Planet</h2>
+
+<section class="products">
+
+    <div class="card">
+        <img src="Benefits-of-argan-oil-conditioner-600x600.webp">
+        <p>Argan Oil Conditioner</p>
+        <p class="price">₹699 (10% Off)</p>
+        <button>Shop now</button>
+    </div>
+
+    <div class="card">
+        <img src="039e52a8-03e8-46d3-9b17-00c23c823afc.__CR0,0,970,600_PT0_SX970_V1___.webp">
+        <p>Onion & Black Seed Oil</p>
+        <p class="price">₹599 (15% Off)</p>
+        <button>Shop now</button>
+    </div>
+<div class="card">
+        <img src="Tea-Tree-2.webp">
+        <p>Tea Tree Shampoo</p>
+        <p class="price">₹649 (12% Off)</p>
+        <button>Shop now</button>
+    </div>
+
+    <div class="card">
+        <img src="lov0107_7conditioner.webp">
+        <p>Lavender Conditioner</p>
+        <p class="price">₹679 (18% Off)</p>
+        <button>Shop now</button>
+    </div>
+
+</div>
+</section>
+
+<footer>
+    <p>© 2025 Nykaa Clone</p>
+    <p>Made by Prisha</p>
+</footer>
+
+</body>
+</html>
